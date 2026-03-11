@@ -29,7 +29,12 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle, var(--dot-color) var(--dot-size), transparent calc(var(--dot-size) + 1px)) center / var(--dot-space) var(--dot-space),
+    radial-gradient(
+        circle,
+        var(--dot-color) var(--dot-size),
+        transparent calc(var(--dot-size) + 1px)
+      )
+      center / var(--dot-space) var(--dot-space),
     var(--dot-bg);
   color: var(--text);
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -105,10 +110,10 @@ p {
 }
 
 h1 {
-  max-width: 10ch;
+  max-width: 18ch;
   margin-top: 0.6rem;
   font-size: clamp(2.6rem, 5vw, 4.8rem);
-  line-height: 0.95;
+  line-height: 1.15;
   letter-spacing: -0.04em;
 }
 
