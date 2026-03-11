@@ -1,7 +1,7 @@
 :root {
-  --bg: #f5f5f2;
+  --bg: #fff;
   --surface: #fbfbf8;
-  --surface-strong: #ffffff;
+  --surface-strong: #eeeeee;
   --text: #171717;
   --muted: #626262;
   --line: rgba(23, 23, 23, 0.1);
@@ -10,6 +10,10 @@
   --radius-lg: 28px;
   --radius-md: 22px;
   --content-width: 1160px;
+  --dot-bg: #f8f8f8;
+  --dot-color: rgb(238, 238, 238);
+  --dot-size: 1px;
+  --dot-space: 16px;
 }
 
 *,
@@ -25,8 +29,8 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(31, 111, 120, 0.08), transparent 30%),
-    linear-gradient(180deg, #f9f9f6 0%, var(--bg) 100%);
+    radial-gradient(circle, var(--dot-color) var(--dot-size), transparent calc(var(--dot-size) + 1px)) center / var(--dot-space) var(--dot-space),
+    var(--dot-bg);
   color: var(--text);
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
